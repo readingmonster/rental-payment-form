@@ -1,7 +1,11 @@
 <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="rental-payment-form.css" />
+  </head>
   <body>
-    <form action="" method="POST" id="payment-form">
-	<h1>Hintz Rental Payments</h1>
+    <div class="main">
+      <form action="" method="POST" id="payment-form">
+	<h1 class="main-title">Hintz Rental Payments</h1>
 	<div>
 	  <h2>Personal Information</h2>
 	  <label>Name</label>
@@ -16,15 +20,33 @@
 	  <br>
 	  <input type="text" class="apt-unit"/>
 	</div>
-	<label>Card Number</label>
-	<input type="text" size="20" autocomplete="off" class="card-number"/>
-	<label>CVC</label>
-	<input type="text" size="4" autocomplete="off" class="card-cvc"/>
-	<label>Expiration (MM/YYYY)</label>
-	<input type="text" size="2" class="card-expiry-month"/>
-	<span> / </span>
-	<input type="text" size="4" class="card-expiry-year"/>
-      <button type="submit" class="submit-button">Submit Payment</button>
-    </form>
+	<div>
+	  <h2>Payment Information</h2>
+	  <label>Payment Amount</label>
+	  <br>
+	  <span class="info">
+	    * A $10 convienence fee will be added to your charge
+	  </span>
+	  <br>
+	  <input type="text" class="amount" />
+	  <br>
+	  <label>Card Number</label>
+	  <br>
+	  <input type="text" class="card-number"/>
+	  <br>
+	  <label>CVC</label>
+	  <br>
+	  <input type="text" class="card-cvc"/>
+	  <br>
+	  <label>Expiration (MM/YYYY)</label>
+	  <br>
+	  <input type="text" size="2" class="card-expiry-month"/>
+	  <span> / </span>
+	  <input type="text" size="4" class="card-expiry-year"/>
+	</div>
+	<br>
+	<button type="submit" class="submit-button">Submit Payment</button>
+      </form>
+    </div>
   </body>
 </html>
